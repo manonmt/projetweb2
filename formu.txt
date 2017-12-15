@@ -1,0 +1,67 @@
+/*<form>
+			<h1>Menu chez Manon et Jeff</h1>
+			<p>Taille :
+				<label><input name="size" type="radio" value="s"> Petite</label>
+				<label><input name="size" type="radio" value="m"> Moyenne</label>
+				<label><input name="size" type="radio" value="l"> Grande</label>
+				<label><input name="size" type="radio" value="g"> Géante</label>
+			</p>
+			<p id="a">Créer votre Pizza</p>
+			 <p class="garniture">Garniture :
+				<label><input name="topping" type="checkbox" value="ch"> Fromage</label>
+				<label><input name="topping" type="checkbox" value="ol"> Olives</label>
+				<label><input name="topping" type="checkbox" value="mu"> Champignons</label>
+				<label><input name="topping" type="checkbox" value="ha"> jambon</label>
+				<label><input name="topping" type="checkbox" value="cho"> chorizo</label>
+				<label><input name="topping" type="checkbox" value="mo"> mozarella</label>
+				<label><input name="topping" type="checkbox" value="an"> anchois</label>
+				<label><input name="topping" type="checkbox" value="ca"> câpres</label>
+				<label><input name="topping" type="checkbox" value="eg"> oeuf</label>
+			 </p>
+		</form>
+	
+	
+	</body>
+
+
+css
+
+
+img {
+	width:100%;
+}
+body{
+	background-image:url("baniere.jpg");
+}
+form{
+	width:50%;
+	height:80%;
+	background-color:rgba(0,0,0,0.8);
+	margin:auto;
+	position:relative;
+	top:10%;
+}
+h1{
+	color:white;
+	text-align:center;
+}
+
+label {
+	color:white;
+}
+p{
+		color:white;
+		margin-left:20px;
+}
+#a{
+	color:white;
+	text-align:center;
+	font-size:30;
+}
+.garniture label {
+	display:block;
+	margin:20px;
+}
+.garniture input{
+	display:inline;
+}
