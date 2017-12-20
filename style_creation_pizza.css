@@ -1,65 +1,3 @@
-#menu{
-	background: black;
-	width: 100%;
-	height:70px;
-	position:fixed;
-}
-body{
-	margin :0;
-}
-#logo{ 
-	height :70px;
-	margin-left:40px;
-}
-#menu h1{
-	display: inline;
-	color : white;
-	position:relative;
-	left:3%;
-	bottom:25px;
-	font-family : 'Calligraffitti', cursive;
-	font-size : 42px;
-}
-.material-icons{
-	color: white;
-	position:absolute;
-	right:70px;
-	top:15px;
-	
-	}
-.fa{
-	color: white;
-	position:absolute;
-	right:20px;
-	top:15px;
-	
-	}
-#menu input {
-	position:absolute; 
-	top:20px;
-	right : 150px;
-	border-radius: 0.5em;
-	height: 25px;
-	width:200px;
-		z-index:-1;
-
-}
-
-#menu input:focus {
-	position:absolute; 
-	top:20px;
-	right : 150px;
-	border-radius: 0.5em;
-	height: 25px;
-	width:300px;
-}
-/*body{
-background-image : url("asset/pizzabackground.jpg");
-background-size: auto;
-background-position :center;
-
-
-}*/
 #carre{
 	width:50%;
 	height:70%;
@@ -68,95 +6,24 @@ background-position :center;
 	position:relative;
 	top:15%;
 	left: 5%;
-	z-index:-1;
-
-
+	z-index:1;
 }
-#menu2{
-	width: 20%;
-	height: 70%;
-	position : fixed;
-	left :10px;
-	bottom:15%;
-	border-radius:0.5em;
-	border: 3px white solid;
-	background-color:rgba(0,0,0,0.8);
-}
-
-@keyframes slidanim {
-0%, 20%, 100% { left: 0 }
-25%, 45% { left: -100% }
-50%, 70% { left: -200% }
-75%, 95% { left: -300% }
-}
-
-.slide{
-	width : 400%;
-	background : none;
-	height : 100%;
-	position : absolute;
-	top : 0;
-	left :0;
-	animation: slidanim 20s infinite;
-}
-
-.slider {
-	height:100%;
-	width:100%;
-	position:fixed;
-	top:0;
-	z-index:-2;
-	overflow:hidden;
-}
-figure {
-	height:100%;
-	width:100vw;
-	display:inline-block;
-	margin:0;
-}
-.a{
-	height:100%;
-	width:100%;
-	margin:0;
-}
-
-ul li {
-	color : white;
-	font-size : 20px;
-	margin-bottom:30px;
-	text-align:center;
-	list-style-type: none; 
-	font-family: 'Roboto Condensed', sans-serif;
-}
-ul{
-	margin-top:30%;
-	margin-left:-40px;
-}
-
-#findepage{ 
-	background:black;
-	position:absolute;
-	bottom: 0%;
-	width: 100%;
-	height: 10%;
-	color : white;
-	text-align : center;
-	font-family: 'Roboto Condensed', sans-serif;
-	margin-top : 20px;
-}
-
 
 #cp{
 	color:white;
 	text-align:center;
+	font-size : 25px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 label {
 	color:white;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 form p{
 		color:white;
 		margin-left:20px;
+		
 }
 
 #garniture label {
@@ -165,17 +32,31 @@ form p{
 }
 #garniture input{
 	display:inline;
+	
 }
 #taille {
 	text-align:center;
-	font-size:30px;
+	font-size:20px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 #garniture{
-	font-size:30px;
+	font-size:20px;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 #validation{
 	position:relative;
 	top:30px;
 	left:70%;
 	height:30px;
+	border-radius : 0.5em;
+	font-family: 'Orbitron', sans-serif;
+	background-color : #6E6E6E;
+	border-color : #6E6E6E;
+	color :white;
+	
 }
+#validation:hover {
+	height : 35px;
+	color : #DF013A;
+}
+	
