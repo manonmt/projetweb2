@@ -11,7 +11,7 @@ body{
 	height :70px;
 	margin-left:40px;
 }
-h1{
+#menu h1{
 	display: inline;
 	color : white;
 	position:relative;
@@ -62,13 +62,13 @@ background-position :center;
 }*/
 #carre{
 	width:50%;
-	height:500px;
+	height:70%;
 	background-color:rgba(0,0,0,0.8);
 	margin:auto;
 	position:relative;
 	top:15%;
 	left: 5%;
-		z-index:-1;
+	z-index:-1;
 
 
 }
@@ -143,4 +143,39 @@ ul{
 	text-align : center;
 	font-family: 'Roboto Condensed', sans-serif;
 	margin-top : 20px;
+}
+
+
+#cp{
+	color:white;
+	text-align:center;
+}
+
+label {
+	color:white;
+}
+form p{
+		color:white;
+		margin-left:20px;
+}
+
+#garniture label {
+	display:inline-block;
+	margin:20px;
+}
+#garniture input{
+	display:inline;
+}
+#taille {
+	text-align:center;
+	font-size:30px;
+}
+#garniture{
+	font-size:30px;
+}
+#validation{
+	position:relative;
+	top:30px;
+	left:70%;
+	height:30px;
 }
