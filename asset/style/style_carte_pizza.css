@@ -1,0 +1,129 @@
+/*style de la boîte : la carte*/
+#rech
+{
+	position:absolute;
+	top:15%;
+	left:46%;
+	border: 3px dashed #FFFFFF ;
+	border-radius: 1em;
+	background-color: rgba(107,13,13,0.8);
+}	
+#rech h1
+{
+	color : white;
+	margin: 15px;
+	font-family : 'Calligraffitti', cursive;
+}
+
+
+/*style des images de pizzas*/
+#c
+{
+	position: absolute;
+	top : 30%;
+	width : 20%;
+	height : 80%;
+	margin-left : 5%;
+}
+.carte
+{ 
+	display:block;
+	width :75%; 
+	height :25%;
+	margin-left : 2%;
+	border : 3px solid black;
+	border-radius : 0.5em;
+	margin-top : 2%;
+}
+
+
+/*style des boîtes contenant les descriptions */
+#text
+{
+	position: absolute;
+	top : 30%;
+	left : 22%;
+	width : 30%;
+	height : 80%;
+}
+.description 
+{
+	width : 200%;
+	height: 25%;
+	margin-top : 1.4%;
+	border: 3px dashed #FFFFFF ;
+	border-radius: 1em;
+	background-color: rgba(107,13,13,0.8);
+}
+.description h2
+{
+	color : white;
+	margin-left : 5%;
+	font-family : 'Calligraffitti', cursive;
+	font-size:3vh;
+	
+}
+.description p
+{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: white; 
+	margin-left : 25px;
+	font-size : 3vh;
+}
+
+
+/* position du pied de page */
+#findepage
+{
+	bottom: -160%;
+}
+@media only screen and (max-device-width:800px){
+	/*changement des boites images pour téléphone*/
+	#c
+	{
+		position: absolute;
+		top : 30%;
+		width : 20%;
+		height : 80%;
+		margin-left : 0%;
+	}
+	.carte
+	{ 
+		display:block;
+		width :150%; 
+		height :25%;
+		margin-left : 2%;
+		border : 3px solid black;
+		border-radius : 0.5em;
+		margin-top : 2%;
+	}
+	
+	
+	/*changement des boîtes descriptions pour téléphone*/
+	#text
+	{
+		position: absolute;
+		top : 30%;
+		left : 33%;
+		width : 30%;
+		height : 80%;
+	}
+	
+	.description h2
+	{
+		color : white;
+		margin-left : 10px;
+		font-family : 'Calligraffitti', cursive;
+		font-size: 2.5vh;
+	}
+	.description p
+	{
+		font-family: 'Roboto Condensed', sans-serif;
+		color: white; 
+		margin-left : 25px;
+		font-size : 2.5vh;
+	}
+}
+	 
+ 
+	 

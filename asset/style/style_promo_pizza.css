@@ -1,0 +1,105 @@
+/* empecher l'affichage du menu défilant sur cette page sur un écran d'ordinateur*/
+nav{display:none;}
+
+
+/* style du carré central*/
+#carre
+{
+	width:50%;
+	height:70%;
+	background-color:rgba(0,0,0,0.8);
+	margin:auto;
+	position:absolute;
+	top:15%;
+	left: 30%;
+	z-index:1;
+	border-radius:0.5em;
+	border: 3px white solid;
+}
+
+
+/*style du titre du carré*/
+#carre h2
+{ 
+	position:relative;
+	top:1%;
+	color: white; 
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align :center;
+}
+
+
+/*style des boîtes rouge*/
+.boite
+{
+	display :inline-block;
+	margin-left: 11%;
+	padding:1%;
+	border : 3px dashed red;
+	border-radius:0.5em;
+	height:75%;
+	width:30%;
+}
+
+
+/*style des images*/
+#promo_reine
+{
+	height : 50%; 
+	width : 100%;
+}
+#promo_peperonni
+{
+	height : 50%; 
+	width : 100%;
+}
+
+
+/*style du texte dans les boîtes rouges*/
+.boite p
+{
+	font-size:125%;
+	color: red;
+	text-align:center;
+}
+.barrer
+{
+	text-decoration: line-through; 
+}
+
+
+/*position du pied de page*/
+#findepage
+{
+	bottom:0;
+}
+@media only screen and (max-device-width:800px)
+{
+	/* permet d'afficher le menu déroulant sur téléphone*/
+	nav{display:inline-block;}
+	
+	
+	/*repositionne et redimensionne le carré central*/
+	#carre
+	{
+		width:90%;
+		height:60%;
+		background-color:rgba(0,0,0,0.8);
+		margin:auto;
+		position:absolute;
+		top:22%;
+		left: 5%;
+		z-index:1;
+		border-radius:0.5em;
+		border: 3px white solid;
+	}
+	
+	
+	/*redimensionne le texte des boîtes rouges*/
+	.boite p
+	{
+		font-size:100%;
+		color: red;
+		text-align:center;
+	}
+}

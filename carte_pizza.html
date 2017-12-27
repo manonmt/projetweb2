@@ -1,30 +1,79 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="modele2.css"/>
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="asset/style/modele2.css"/>
+		<link rel="stylesheet" href="asset/style/style_carte_pizza.css"/>
+		<link rel="stylesheet" href="asset/style/modele_menu.css"/>
 		<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<title>Menu chez Manon et Jeff</title>
-
 	</head>
 	<body>
 		<section id="menu">
-			<img id="logo" src="asset/logo.png">
+			<img id="logo" alt="logo" src="asset/image/logo.png">
 			<h1>Chez Manon et Jeff </h1>
-			<i class="material-icons" style="font-size:42px">search</i>
-			<i id="panier" style="font-size:36px" class="fa">&#xf291;</i>
-			
+			<a href="recherche_pizza.html">
+				<i id="loupe" class="material-icons" style="font-size:42px">search</i>
+			</a>
+			<a href="panier_pizza.html">
+				<i id="panier" class="fa fa-truck" aria-hidden="true"></i>
+			</a>
 			<input placeholder="recherche">
-	
+		</section>	
+		
+		<nav id="menu_déroulant">
+			<ul>
+				<li>Menu
+					<ul class="submenu">
+						<li><a href="carte_pizza.html">Notre carte</a></li>
+						<li><a href="promo_pizza.html">Nos promos</a></li>
+						<li><a href="construction_pizza.html">Notre sélection</a></li>
+						<li><a href="creation_pizza.html">Créer votre pizza</a></li>
+						<li><a href="qui_somme_nous.html">Qui sommes-nous ?</a></li>
+						<li><a href="construction_pizza.html">L'origine de nos produits</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		
+		<section id="rech">
+			<h1>LA CARTE !</h1>
 		</section>
-		<section id="findepage">
-			<p>Contactez-nous sur  : <i id="facebook" class="fa fa-facebook-square" style="font-size:36px"></i> <i id="snap" class="fa fa-snapchat-square" style="font-size:36px"></i> <i id="twitter"class="fa fa-twitter-square" style="font-size:36px"></i></p>
-		</section>
+		
+		<div id="c">
+			<img class="carte" alt="img1" src="asset/image/4fromage.jpg">
+			<img class="carte" alt="img2" src="asset/image/peperonni_promo.jpg">
+			<img class="carte" alt="img3" src="asset/image/reine_promo.jpg">
+			<img class="carte" alt="img4" src="asset/image/hawai.jpeg">
+			<img class="carte" alt="img5" src="asset/image/viande.jpg">
+			<img class="carte" alt="img6" src="asset/image/jambon.jpg">
+			<img class="carte" alt="img7" src="asset/image/chorizo.jpg">
+			<img class="carte" alt="img8" src="asset/image/parmesan.jpg">
+			<img class="carte" alt="img9" src="asset/image/saumon.png">
+			<img class="carte" alt="img10" src="asset/image/legume.jpg">
+		</div>
+		
+		<div id="text">
+			<section class="description"><h2>La margherita : 4 €</h2><p>Sauce tomate, mozzarella.</p></section>
+			<section class="description" ><h2>La peperonni : 5 €</h2><p> Sauce tomate, mozzarella, peperonni.</p></section>
+			<section class="description" ><h2>La reine : 6 €</h2><p> Sauce tomate, mozzarella, fromage, champignons, jambon.</p></section>
+			<section class="description" ><h2>La Hawaienne : 5 €</h2><p> Sauce tomate, mozzarella, jambon, ananas.</p></section>
+			<section class="description" ><h2>La  bolognaise : 5.5 €</h2><p> Sauce tomate, mozzarella, fromage, boeuf.</p></section>
+			<section class="description" ><h2>La classique : 4 €</h2><p> Sauce tomate, mozzarella, jambon.</p></section>
+			<section class="description" ><h2>La chorizo : 6.5 €</h2><p> Sauce tomate, mozzarella, chorizo.</p></section>
+			<section class="description" ><h2>L'originale : 4.5 €</h2><p> Sauce tomate, mozzarella, fromage, jambon cru.</p></section>
+			<section class="description" ><h2>L'oceanne : 6.5 €</h2><p> Creme fraîche, saumon, annette.</p></section>
+			<section class="description" ><h2>Poivron &co: 7.5 €</h2><p> Sauce tomate, mozzarella, poivron.</p></section>
+		</div>
+		
+		<div id="findepage">
+			<p>Contactez-nous sur  : <a href="#"><i id="facebook" class="fa fa-facebook-square" style="font-size:36px"></i></a> <a href="#"><i id="snap" class="fa fa-snapchat-square" style="font-size:36px"></i></a> <a href="#"><i id="twitter" class="fa fa-twitter-square" style="font-size:36px"></i></a></p>
+		</div>
+		
 	</body>
 	
 </html>

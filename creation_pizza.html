@@ -1,14 +1,14 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style_creation_pizza.css"/>
-		<link rel="stylesheet" href="modele.css"/>	
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="asset/style/style_creation_pizza.css"/>
+		<link rel="stylesheet" href="asset/style/modele.css"/>
+		<link rel="stylesheet" href="asset/style/modele_menu.css"/>		
 		<link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 		<title>Menu chez Manon et Jeff</title>
@@ -16,34 +16,47 @@
 	</head>
 	<body>
 		<section id="menu">
-			<img id="logo" src="asset/logo.png">
+			<img id="logo" alt="logo" src="asset/image/logo.png">
 			<h1>Chez Manon et Jeff </h1>
-			<i class="material-icons" style="font-size:42px">search</i>
-			<i id="panier" style="font-size:36px" class="fa">&#xf291;</i>
+			<a href="recherche_pizza.html"><i class="material-icons" style="font-size:42px">search</i></a>
+			<a href="panier_pizza.html"><i id="panier" class="fa fa-truck" aria-hidden="true"></i></a>
 			
 			<input placeholder="recherche">
 		</section>
-		<section id="menu2">
-		<h2></h2></h2>
+		<div id="menu2">
 			<ul>
-				<li>Notre carte</li>
-				<li>Nos promos</li>
-				<li>Notre sélection</li>
-				<li>Créer votre pizza</li>
-				<li>Qui sommes-nous ?</li>
-				<li>L'origine de nos produits</li>
+				<li><a href="carte_pizza.html">Notre carte</a></li>
+				<li><a href="promo_pizza.html">Nos promos</a></li>
+				<li><a href="construction_pizza.html">Notre sélection</a></li>
+				<li><a href="creation_pizza.html">Créer votre pizza</a></li>
+				<li><a href="qui_somme_nous.html">Qui sommes-nous ?</a></li>
+				<li><a href="construction_pizza.html">L'origine de nos produits</a></li>
 			</ul>
-		</section>
+		</div>
+		<nav id="menu_déroulant">
+			<ul>
+			<li>Menu
+				<ul class="submenu">
+					<li><a href="carte_pizza.html">Notre carte</a></li>
+					<li><a href="promo_pizza.html">Nos promos</a></li>
+					<li><a href="construction_pizza.html">Notre sélection</a></li>
+					<li><a href="creation_pizza.html">Créer votre pizza</a></li>
+					<li><a href="qui_somme_nous.html">Qui sommes-nous ?</a></li>
+					<li><a href="construction_pizza.html">L'origine de nos produits</a></li>
+				</ul>
+			</li>
+			</ul>
+		</nav>
 		<section id="carre">
 			<form>
-				<h1 id="cp">Créer votre Pizza</h1>
+				<h1 id="titre1">Créer votre Pizza</h1>
 				<p id="taille">Taille :
 					<label><input name="size" type="radio" value="s"> Petite : 0,50€</label>
 					<label><input name="size" type="radio" value="m"> Moyenne : 1€</label>
 					<label><input name="size" type="radio" value="l"> Grande : 1,50€</label>
 					<label><input name="size" type="radio" value="g"> Géante : 2€</label>
 				</p>
-				<p id="garniture">Garniture :
+				<div id="garniture">Garniture :
 					<p><label><input name="topping" type="checkbox" value="ch"> Fromage</label>
 					<label><input name="topping" type="checkbox" value="ol"> Olives</label>
 					<label><input name="topping" type="checkbox" value="mu"> Champignons</label></p>
@@ -63,31 +76,41 @@
 					<label><input name="topping" type="checkbox" value="po"> Poivrons</label>
 					<label><input name="topping" type="checkbox" value="pe"> Peperonni</label>
 					<label><input name="topping" type="checkbox" value="og"> Oignons</label></p>
-				</p>
-				<p id="prix">0,75centime par ingrédient + prixtaille</p>
-				<button id="validation">Valider votre Pizza !</button>
+					<p><label><input name="topping" type="checkbox" value="or">Cherdar</label>
+					<label><input name="topping" type="checkbox" value="po"> Boeuf</label>
+					<label><input name="topping" type="checkbox" value="pe"> Bacon</label>
+					<label><input name="topping" type="checkbox" value="og"> Saumon</label></p>
+					<p><label><input name="topping" type="checkbox" value="or">Steak</label>
+					<label><input name="topping" type="checkbox" value="po"> Thon</label>
+					<label><input name="topping" type="checkbox" value="pe"> Cornichon</label>
+					<label><input name="topping" type="checkbox" value="og"> Sauce Barbecue</label></p>
+				</div>
 			</form>
-		
+				<p id="prix">0,75centime par ingrédient + prixtaille</p>
+				<form action="panier_pizza.html" method="get">
+					<button id="validation">Valider votre Pizza !</button>
+				</form>
+			
 		</section>
 		<div class="slider">
             <div class="slide">
 				<figure>
-					<img class="a" alt="actu" src="asset/pizzabackground.jpg"/>
+					<img class="a" alt="actu" src="asset/image/pizzabackground.jpg"/>
 				</figure><!--
 				--><figure>
-					<img class="a" alt="actu" src="asset/pizzabackground2.jpeg"/>
+					<img class="a" alt="actu" src="asset/image/pizzabackground2.jpeg"/>
 				</figure><!--
 				--><figure>
-					<img class="a" alt="actu" src="asset/pizzabackground3.jpg"/>
+					<img class="a" alt="actu" src="asset/image/pizzabackground3.jpg"/>
 				</figure><!--
 				--><figure>
-					<img class="a" alt="actu" src="asset/pizzabackground4.jpg"/>
+					<img class="a" alt="actu" src="asset/image/pizzabackground4.jpg"/>
 				</figure>
             </div>
         </div>​
-		<section id="findepage">
-			<p>Contactez-nous sur  : <i id="facebook" class="fa fa-facebook-square" style="font-size:36px"></i> <i id="snap" class="fa fa-snapchat-square" style="font-size:36px"></i> <i id="twitter"class="fa fa-twitter-square" style="font-size:36px"></i></p>
-		</section>
+		<div id="findepage">
+			<p>Contactez-nous sur  : <a href="#"><i id="facebook" class="fa fa-facebook-square" style="font-size:36px"></i></a> <a href="#"><i id="snap" class="fa fa-snapchat-square" style="font-size:36px"></i></a> <a href="#"><i id="twitter" class="fa fa-twitter-square" style="font-size:36px"></i></a></p>
+		</div>
 	</body>
 	
 </html>

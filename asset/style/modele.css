@@ -1,0 +1,169 @@
+/* modele de la page contenant le slider*/
+body
+{
+	margin :0;
+}
+
+
+/* barre du haut*/
+#menu
+{
+	background: black;
+	width: 100%;
+	height:10%;
+	position:fixed;
+	z-index:2;
+}
+#logo
+{ 
+	height :90%;
+	margin-left:2%;
+}
+
+#menu h1
+{
+	display: inline;
+	color : white;
+	position:relative;
+	left:3%;
+	bottom:3vh;
+	font-family : 'Calligraffitti', cursive;
+	font-size : 6vh;
+}
+.material-icons
+{
+	color: white;
+	position:absolute;
+	right:14%;
+	top:20%;
+}
+#panier
+{
+	color: white;
+	position:absolute;
+	right:2%;
+	top:20%;
+	font-size:5vh;
+}
+#menu input 
+{
+	position:absolute; 
+	top:30%;
+	right : 18%;
+	border-radius: 0.5em;
+	height: 35%;
+	width:15%;
+}
+
+#menu input:focus
+{
+	position:absolute; 
+	top:30%;
+	right : 18%;
+	border-radius: 0.5em;
+	height: 40%;
+	width:25%;
+}
+
+
+/* animation du slider */
+@keyframes slidanim {
+0%, 20%, 100% { left: 0 }
+25%, 45% { left: -100% }
+50%, 70% { left: -200% }
+75%, 95% { left: -300% }
+}
+
+.slide
+{
+	width : 400%;
+	background : none;
+	height : 100%;
+	position : absolute;
+	top : 0;
+	left :0;
+	animation: slidanim 20s infinite;
+}
+
+.slider
+{
+	height:100%;
+	width:100%;
+	position:fixed;
+	top:0;
+	z-index:-2;
+	overflow:hidden;
+}
+figure
+{
+	height:100%;
+	width:25%;
+	display:inline-block;
+	margin:0;
+}
+.a
+{
+	height:100%;
+	width:100%;
+	margin:0;
+}
+
+
+/*bande du bas fin de page*/
+#findepage
+{ 
+	background:black;
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	color : white;
+	text-align : center;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#facebook
+{
+	vertical-align:middle;
+}
+#snap
+{
+	vertical-align :middle;
+}
+#twitter
+{
+	vertical-align :middle;
+}
+a
+{
+	color:white;
+	text-decoration: none; 
+}
+
+@media only screen and (max-device-width:800px)
+{
+	/* changement de la barre du haut pour téléphone*/
+	#menu h1
+	{	
+		font-size:3vh;
+		position: relative;
+		left:-2%;
+	}
+	#menu input
+	{
+		right:30%;
+	}
+	#menu input:focus
+	{
+		right: 30%;
+	}
+	#logo
+	{ 
+		height :80%;
+		margin-left:0%;
+	}
+	
+	
+	/* empeche le menu fixe d'apparaître sur téléphone*/
+	#menu2{
+		display:none;
+	}
+}

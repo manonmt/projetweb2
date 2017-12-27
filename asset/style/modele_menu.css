@@ -1,0 +1,139 @@
+/* style du menu gauche fixe*/
+#menu2
+{
+	width: 20%;
+	position : fixed;
+	left :1%;
+	top:15%;
+	border-radius:0.5em;
+	border: 3px white solid;
+	background-color:rgba(0,0,0,0.8);
+}
+#menu2 ul li 
+{
+	color : white;
+	font-size : 2.5vh;
+	margin-bottom:15%;
+	text-align:center;
+	list-style-type: none; 
+	font-family: 'Roboto Condensed', sans-serif;
+}
+#menu2 ul
+{
+	margin-left:-40px;
+}
+#menu2 a 
+{
+	text-decoration: none; 
+	color:white;
+}
+
+
+
+
+/*style de nav: menu déroulant*/
+nav 
+{
+	background-color:black;
+	position:fixed;
+	top:10vh;
+	width:20%;
+	border-top:1px solid white;
+	z-index: 10;
+}
+ 
+nav > ul 
+{ 
+	margin :0;
+	padding :0;
+	background:black;
+	height:60px;
+	border-radius :0.5em;
+	text-align:center;
+}
+ 
+nav > ul > li 
+{
+	text-align:center;
+	position: relative;
+	font-size:42px;
+	color : white; 
+}
+ 
+nav li 
+{
+	list-style-type : none;
+}
+ 
+.submenu 
+{
+	display:none;
+	background-color: black;
+	width:100%;
+}
+
+nav:hover .submenu 
+{
+	display:inline-block;
+	position:absolute;
+	top:100%;
+	left:0px;
+	padding:0px;
+	z-index:10;
+}
+ 
+
+nav > ul::after
+{ 
+	content : "";
+	display: block; 
+	clear :both;
+}
+ 
+nav a 
+{
+	display: inline-block;
+	text-decoration: none; 
+}
+ 
+nav > ul > li > a 
+{
+	 padding:20px 30px;
+	 color: #FFF;
+}
+.submenu li
+{
+	 border-bottom:1px solid #CCC;
+	 margin-left:-40px;
+}
+.submenu li a
+{
+	 padding: 15px 30px;
+	 font-size:20px;
+	 color:white;
+	 width:100%;
+}
+@media only screen and (max-device-width:800px)
+{
+/* changement sur le menu déroulant pour visuel sur téléphone 
+choix de n'afficher que le menu déroulant sur téléphone */
+	nav 
+	{
+		background-color:black;
+		position:absolute;
+		top:10vh;
+		width:45%;
+		border-top:1px solid white;
+	}
+	nav > ul > li 
+	{
+		text-align:center;
+		position: relative;
+		font-size:4vh;
+		color : white; 
+	}
+	.submenu li a
+	{
+		font-size:2vh;
+	}
+}

@@ -1,0 +1,160 @@
+/* empecher l'affichage du menu défilant sur cette page sur un écran d'ordinateur*/
+nav{display:none;}
+
+
+/* style du carré central*/
+#carre
+{
+	width:50%;
+	height:70%;
+	border: 5px dashed #FFFFFF ;
+	margin:auto;
+	position:absolute;
+	top:15%;
+	left: 30%;
+	border-radius : 1em;
+	background-color: rgba(107,13,13,0.8);
+}
+
+
+/*style du texte dans le carré central*/
+#carre h1
+{
+	display: inline;
+	color : white;
+	position:relative;
+	left:3%;
+	bottom:8%;
+	font-family : 'Calligraffitti', cursive;
+	font-size : 4vh;
+}
+#carre p
+{ 
+	font-size: 100%;
+	color : white;
+	font-family: 'Roboto Condensed', sans-serif;
+	margin :1%;
+	text-align: justify;;
+}
+
+
+/* style de l'image*/
+#img1
+{
+	width : 45%;
+	height: 30%;
+	display: inline-block;
+	float : right;
+	margin-top: 7%;
+	margin-left : 10%;
+	margin-right : 10%;
+}
+
+
+/*style du gif*/
+#img2
+{
+	display: inline-block;
+	width:50%;
+	float:right;
+	position:absolute;
+	top:50%;
+	right:5%;
+}
+
+
+/*style de la map*/
+#carre iframe
+{
+	display : block;
+	width : 40%;
+	height: 30%;
+	border : 3px solid white;
+	border-radius : 1em;
+	margin-right :0;
+	margin-left:1%;
+
+}
+
+
+/*position du pied de page*/
+#findepage
+{
+	bottom:0;
+}
+
+
+
+@media only screen and (max-device-width:800px)
+{
+	/* permet d'afficher le menu déroulant sur téléphone*/
+	nav{display:inline-block;}
+	
+	
+	/*repositionne le pied de page*/
+	#findepage{bottom:-80%;}
+	
+	
+	/*repositionne et redimensionne le carré central*/
+	#carre
+	{
+		width:75%;
+		height:130%;
+		border: 5px dashed #FFFFFF ;
+		margin:auto;
+		position:absolute;
+		top:22%;
+		left: 10%;
+		border-radius : 1em;
+		background-color: rgba(107,13,13,0.8);
+	}
+	
+	
+	/*repositionne et redimensionne l'image*/
+	#img1
+	{
+		width : 45%;
+		height: 20%;
+		display: inline-block;
+		float : right;
+		margin-top: 7%;
+		margin-left : 10%;
+		margin-right : 10%;
+	}
+	
+	
+	/*repositionne et redimensionne le gif*/
+	#img2
+	{
+		display: inline-block;
+		width:70%;
+		position:absolute;
+		top:45%;
+		right:15%;
+		
+	}
+	
+	
+	/*repositionne le: localisez nous!*/
+	#titre2
+	{
+		position:relative;
+		bottom:0;
+		top:20vh;
+	}
+	
+	
+	/*repositionne et redimensionne la map*/
+	#carre iframe
+	{
+		display : block;
+		width : 90%;
+		height: 30%;
+		border : 3px solid white;
+		border-radius : 1em;
+		margin-right :0;
+		margin-left:5%;
+		position:relative;
+		top:20vh;
+	}
+}

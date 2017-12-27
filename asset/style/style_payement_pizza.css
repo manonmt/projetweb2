@@ -1,0 +1,119 @@
+/* style du carré central*/
+#carre
+{
+	width:50%;
+	height:70%;
+	border: 5px dashed #FFFFFF ;
+	margin:auto;
+	position:absolute;
+	top:15%;
+	left: 30%;
+	border-radius : 1em;
+	background-color: rgba(107,13,13,0.8);
+}
+/*style du formulaire*/
+label
+{
+	font-size : 3vh;
+	color:white; 
+	font-family: 'Roboto Condensed', sans-serif;
+}
+td
+{
+	width:50%;
+}
+#client input
+{
+	width:100%;
+}
+#carte input
+{
+	width:100%;
+}
+#addresse input
+{
+	width:100%;
+}
+#carre h1
+{
+	font-family : 'Calligraffitti', cursive;
+	color : white;
+	font-size:3vh;
+	text-align:center;
+}
+table
+{
+	margin-left:5%;
+}
+
+
+
+
+/*style du bouton valider*/
+#valide
+{
+	position:relative;
+	top:5vh;
+	left:65%;
+	padding:1%;
+	border-radius : 0.5em;
+	font-family: 'Orbitron', sans-serif;
+	font-size:1.5vh;
+	background-color : #6E6E6E;
+	border-color : #6E6E6E;
+	color :white;
+}
+#valide:hover
+{
+	height : 5vh;
+	background-color : #DF013A;
+}
+
+
+/* position du pied de page*/ 
+#findepage
+{
+	bottom:0;
+}
+
+@media only screen and (max-device-width:800px){
+	/*repositionnement du pied de page*/
+	#findepage{bottom:-20%;}
+	
+	
+	/*repositionne et redimensionne le carré central*/
+	#carre
+	{
+		width:75%;
+		height:80%;
+		border: 5px dashed #FFFFFF ;
+		margin:auto;
+		position:absolute;
+		top:22%;
+		left: 10%;
+		border-radius : 1em;
+		background-color: rgba(107,13,13,0.8);
+	}
+	
+	
+	/*repositionne et redimensionne le bouton valider*/
+	#valide
+	{
+		position:relative;
+		top:7vh;
+		left:40%;
+		padding:1%;
+		border-radius : 0.5em;
+		font-family: 'Orbitron', sans-serif;
+		font-size:1.5vh;
+		background-color : #6E6E6E;
+		border-color : #6E6E6E;
+		color :white;
+	}
+	#valide:hover
+	{
+		height : 9vh;
+		background-color : #DF013A;
+	}
+
+}
